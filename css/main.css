@@ -1,0 +1,51 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid 5px red;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+header {
+  background-color: blueviolet;
+  height: 100px;
+}
+
+.pages {
+  display: flex;
+  gap: 40px;
+  margin-left: 500px;
+}
+
+.pages__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */
