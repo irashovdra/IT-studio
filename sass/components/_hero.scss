@@ -1,0 +1,32 @@
+.hero-section {
+    background-color: black;
+}
+
+.hero-section__text {
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: $secondary-color;
+}
+
+.hero-section__title {
+    font-weight: 800;
+font-size: 48px;
+line-height: 64px;
+text-align: center;
+color: $secondary-color;
+}
+
+.hero-section__btn {
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: $secondary-color;
+padding: 15px 35px 15px 35px;
+background: $accent;
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+border-radius: 30px;
+}
+

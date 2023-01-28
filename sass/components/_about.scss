@@ -1,0 +1,46 @@
+.about-section__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 53px;
+text-align: center;
+color: $title-color;
+}
+
+.about-section__text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: $main-text-color;
+}
+
+.about-list {
+    display: flex;
+    gap: 27px;
+}
+
+.about-list__title {
+    font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+
+.about-list__text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: $main-text-color;
+}
+
+.about-section__btn {
+    font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: $secondary-color;
+padding: 15px 35px 15px 35px;
+background: $accent;
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+border-radius: 30px;
+}

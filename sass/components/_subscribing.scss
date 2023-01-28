@@ -1,0 +1,40 @@
+.subscribing {
+    border-top: 1px solid #E0E0E0;
+    padding-bottom: 67px;
+}
+
+.subscribing__title {
+    font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: $description-color;
+margin-bottom: 20px;
+}
+
+.subscribing__description {
+    font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+color: $main-text-color;
+margin-bottom: 30px;
+}
+
+.subscribing__filling {
+    background: $secondary-color;
+border: 1px solid #F2F2F2;
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+border-radius: 30px;
+padding: 15px 33px 15px 33px;
+margin-bottom: 35px;
+}
+
+.subscribing__text {
+    font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+text-align: center;
+color: $main-text-color;
+}
+
