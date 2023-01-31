@@ -1,15 +1,35 @@
 header {
-  background-color: blueviolet;
-  height: 100px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.active-page::after {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $secondary-color;
+  width: 100%;
+  border-radius: 3px;
 }
 
 .pages {
   display: flex;
-  gap: 40px;
   margin-left: 500px;
 }
 
 .pages__link {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;

@@ -1,34 +1,28 @@
 .video {
-    padding-top: 70px;
-    padding-bottom: 85px;
-    background-color: black;
-    margin-bottom: 232px;
+  padding-top: 70px;
+  padding-bottom: 85px;
+  background-color: black;
+  margin-bottom: 232px;
 }
 
 .video__title {
-    font-weight: 700;
-font-size: 36px;
-line-height: 53px;
-text-align: center;
-color: $secondary-color;
-margin-bottom: 30px;
+  @include section-title(
+    $title-position: center,
+    $section-title-color: $secondary-color
+  );
 }
 
 .video__text {
-    font-weight: 400;
-font-size: 16px;
-line-height: 25px;
-text-align: center;
-color: $secondary-color;
-margin-bottom: 235px;
+@extend %section-list;
+  margin-bottom: 235px;
 }
 
 .video__btn {
-    font-weight: 500;
-font-size: 16px;
-line-height: 25px;
-color: $secondary-color;
-border: 1px solid #FFFFFF;
-border-radius: 200px;
-padding: 40px 30px 40px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: $secondary-color;
+  border: 1px solid #ffffff;
+  border-radius: 200px;
+  padding: 40px 30px 40px 30px;
 }

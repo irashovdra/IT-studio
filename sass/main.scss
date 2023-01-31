@@ -1,6 +1,8 @@
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/variables";
+@import "./utils/_placeholders";
+@import "./utils/mixines";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";

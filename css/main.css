@@ -29,55 +29,17 @@ button {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 5px red;
 }
 
 body {
   font-family: "Montserrat";
 }
 
-header {
-  background-color: blueviolet;
-  height: 100px;
-}
-
-.pages {
-  display: flex;
-  gap: 40px;
-  margin-left: 500px;
-}
-
-.pages__link {
+.projects-section__btn, .work-section__btn, .about-section__btn, .hero-section__btn {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  color: #FFFFFF;
-}
-
-.hero-section {
-  background-color: black;
-}
-
-.hero-section__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.hero-section__title {
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 64px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.hero-section__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   color: #FFFFFF;
   padding: 15px 35px 15px 35px;
@@ -86,10 +48,88 @@ header {
   border-radius: 30px;
 }
 
+header {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.active-page::after {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.pages {
+  display: flex;
+  margin-left: 500px;
+}
+
+.pages__link {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FFFFFF;
+}
+
+.hero-section {
+  max-width: 1920px;
+  padding-top: 319px;
+  padding-bottom: 335px;
+  background-repeat: no-repeat;
+  background-image: url(../../images/desktop/hero-bg@1x.jpg);
+  background-size: cover;
+}
+
+.hero-section__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.hero-section__title {
+  max-width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.hero-section__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
 .about-section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
   text-align: center;
   color: #323232;
 }
@@ -121,22 +161,11 @@ header {
   color: #999999;
 }
 
-.about-section__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  padding: 15px 35px 15px 35px;
-  background: #4985FF;
-  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-  border-radius: 30px;
-}
-
 .development-section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
+  text-align: left;
   color: #323232;
 }
 
@@ -178,20 +207,9 @@ header {
 .work-section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
+  text-align: left;
   color: #FFFFFF;
-}
-
-.work-section__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #4985FF;
-  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-  border-radius: 30px;
-  padding: 15px 35px 15px 35px;
 }
 
 .work-list {
@@ -232,10 +250,9 @@ header {
 .projects-section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
   text-align: center;
-  color: #000000;
-  margin-bottom: 28px;
+  color: #323232;
 }
 
 .projects-section__text {
@@ -257,18 +274,6 @@ header {
   border-radius: 10px;
 }
 
-.projects-section__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #4985FF;
-  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-  border-radius: 30px;
-  padding: 15px 35px 15px 35px;
-}
-
 .video {
   padding-top: 70px;
   padding-bottom: 85px;
@@ -279,10 +284,9 @@ header {
 .video__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 30px;
 }
 
 .video__text {
@@ -299,7 +303,7 @@ header {
   font-size: 16px;
   line-height: 25px;
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 200px;
   padding: 40px 30px 40px 30px;
 }
