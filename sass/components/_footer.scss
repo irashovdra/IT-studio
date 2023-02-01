@@ -3,9 +3,14 @@ footer {
   background: #f6f6f8;
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 // Контакти
+
+.contacts-list {
+  gap: 30px;
+}
 
 .contacts-title {
   font-weight: 600;
@@ -24,6 +29,10 @@ footer {
 
 // Посилання
 
+.links-list {
+  gap: 30px;
+}
+
 .links-title {
   font-weight: 600;
   font-size: 18px;
@@ -41,6 +50,10 @@ footer {
 
 // Проекти
 
+.projects-list {
+  gap: 30px;
+}
+
 .projects-title {
   font-weight: 600;
   font-size: 18px;
@@ -57,6 +70,10 @@ footer {
 }
 
 // Соціальні мережі
+
+.socials-list {
+  gap: 30px;
+}
 
 .socials-title {
   font-weight: 600;

@@ -1,5 +1,20 @@
+.work-section {
+    padding-top: 100px;
+    margin-bottom: 67px;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 85px;
+}
+
+.work-section__content {
+    display: flex;
+}
+
 .work-section__title {
     @include section-title($section-title-color: $secondary-color);
+    max-width: 480px;
+    margin-right: 430px;
+    margin-bottom: 70px;
 }
 
 .work-section__btn {
@@ -11,11 +26,16 @@
     gap: 30px;
 }
 
+.work-list__photo {
+    margin-bottom: 30px;
+}
+
 .work-list__number {
     font-weight: 600;
 font-size: 18px;
 line-height: 22px;
 color: $accent;
+margin-right: 5px;
 }
 
 .work-list__title {
@@ -23,6 +43,15 @@ color: $accent;
 font-size: 18px;
 line-height: 22px;
 color: $description-color;
+margin-bottom: 30px;
+}
+
+.work-list__text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+color: $main-text-color;
+margin-bottom: 47px;
 }
 
 .work-list__link {

@@ -48,6 +48,13 @@ body {
   border-radius: 30px;
 }
 
+.subscribing__description, .video__text, .projects-section__text, .development-section__text, .about-section__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.56;
+  color: #999999;
+}
+
 header {
   width: 100%;
   padding-top: 40px;
@@ -132,19 +139,25 @@ header {
   line-height: 1.47;
   text-align: center;
   color: #323232;
+  margin-bottom: 32px;
+  display: block;
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-section__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
   text-align: center;
-  color: #999999;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
 }
 
 .about-list {
   display: flex;
   gap: 27px;
+  margin-bottom: 55px;
 }
 
 .about-list__title {
@@ -152,6 +165,7 @@ header {
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+  margin-bottom: 12px;
 }
 
 .about-list__text {
@@ -161,19 +175,32 @@ header {
   color: #999999;
 }
 
+.about-section__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.development-section {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background: #F6F6F8;
+  margin-bottom: 67px;
+}
+
 .development-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.47;
   text-align: left;
   color: #323232;
+  max-width: 350px;
+  margin-bottom: 57px;
 }
 
 .development-section__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  color: #999999;
+  max-width: 490px;
+  margin-bottom: 42px;
 }
 
 .development-section__link {
@@ -183,6 +210,7 @@ header {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #4985FF;
+  margin-bottom: 213px;
 }
 
 .development-list {
@@ -195,6 +223,7 @@ header {
   font-size: 36px;
   line-height: 53px;
   color: #000000;
+  margin-bottom: 17px;
 }
 
 .development-list__text {
@@ -204,12 +233,27 @@ header {
   color: #999999;
 }
 
+.work-section {
+  padding-top: 100px;
+  margin-bottom: 67px;
+  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 85px;
+}
+
+.work-section__content {
+  display: flex;
+}
+
 .work-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.47;
   text-align: left;
   color: #FFFFFF;
+  max-width: 480px;
+  margin-right: 430px;
+  margin-bottom: 70px;
 }
 
 .work-list {
@@ -217,11 +261,16 @@ header {
   gap: 30px;
 }
 
+.work-list__photo {
+  margin-bottom: 30px;
+}
+
 .work-list__number {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #4985FF;
+  margin-right: 5px;
 }
 
 .work-list__title {
@@ -229,6 +278,15 @@ header {
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+  margin-bottom: 30px;
+}
+
+.work-list__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+  margin-bottom: 47px;
 }
 
 .work-list__link {
@@ -253,15 +311,15 @@ header {
   line-height: 1.47;
   text-align: center;
   color: #323232;
+  margin-bottom: 30px;
 }
 
 .projects-section__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  color: #999999;
   margin-bottom: 90px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .projects-list {
@@ -278,7 +336,7 @@ header {
   padding-top: 70px;
   padding-bottom: 85px;
   background-color: black;
-  margin-bottom: 232px;
+  margin-bottom: 165px;
 }
 
 .video__title {
@@ -287,14 +345,10 @@ header {
   line-height: 1.47;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .video__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  color: #FFFFFF;
   margin-bottom: 235px;
 }
 
@@ -309,7 +363,8 @@ header {
 }
 
 .subscribing {
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 67px;
   padding-bottom: 67px;
 }
 
@@ -323,21 +378,20 @@ header {
 }
 
 .subscribing__description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
   text-align: center;
-  color: #999999;
   margin-bottom: 30px;
 }
 
 .subscribing__filling {
   background: #FFFFFF;
-  border: 1px solid #F2F2F2;
+  display: block;
+  border: 1px solid #f2f2f2;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   padding: 15px 33px 15px 33px;
   margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribing__text {
@@ -352,6 +406,11 @@ footer {
   padding-top: 70px;
   background: #f6f6f8;
   display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contacts-list {
   gap: 30px;
 }
 
@@ -370,6 +429,10 @@ footer {
   color: #999999;
 }
 
+.links-list {
+  gap: 30px;
+}
+
 .links-title {
   font-weight: 600;
   font-size: 18px;
@@ -385,6 +448,10 @@ footer {
   color: #999999;
 }
 
+.projects-list {
+  gap: 30px;
+}
+
 .projects-title {
   font-weight: 600;
   font-size: 18px;
@@ -398,6 +465,10 @@ footer {
   font-size: 14px;
   line-height: 22px;
   color: #999999;
+}
+
+.socials-list {
+  gap: 30px;
 }
 
 .socials-title {

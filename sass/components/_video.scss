@@ -2,7 +2,7 @@
   padding-top: 70px;
   padding-bottom: 85px;
   background-color: black;
-  margin-bottom: 232px;
+  margin-bottom: 165px;
 }
 
 .video__title {
@@ -10,10 +10,11 @@
     $title-position: center,
     $section-title-color: $secondary-color
   );
+  margin-bottom: 30px;
 }
 
 .video__text {
-@extend %section-list;
+@extend %section-text;
   margin-bottom: 235px;
 }
 
