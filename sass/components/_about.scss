@@ -25,6 +25,12 @@
   display: flex;
   gap: 27px;
   margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-list__item {
+  width: 350px;
 }
 
 .about-list__title {

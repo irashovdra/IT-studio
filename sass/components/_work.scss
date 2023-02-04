@@ -24,10 +24,16 @@
 .work-list {
     display: flex;
     gap: 30px;
+    justify-content: center;
+}
+
+.work-list__item {
+    width: 350px;
 }
 
 .work-list__photo {
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .work-list__number {

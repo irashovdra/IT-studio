@@ -158,6 +158,12 @@ header {
   display: flex;
   gap: 27px;
   margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-list__item {
+  width: 350px;
 }
 
 .about-list__title {
@@ -259,10 +265,16 @@ header {
 .work-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
+}
+
+.work-list__item {
+  width: 350px;
 }
 
 .work-list__photo {
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .work-list__number {
@@ -326,10 +338,17 @@ header {
   display: flex;
   gap: 30px;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .projects-list__photo {
   border-radius: 10px;
+}
+
+.projects-section__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video {
