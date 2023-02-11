@@ -3,45 +3,48 @@
   padding-bottom: 70px;
   background: #F6F6F8;
   margin-bottom: 67px;
-}
 
-.development-section__title {
+  &__title {
   @include section-title();
   max-width: 350px;
   margin-bottom: 57px;
 }
 
-.development-section__text {
+&__text {
   @extend %section-text;
   max-width: 490px;
   margin-bottom: 42px;
 }
 
-.development-section__link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration-line: underline;
-  color: $accent;
+&__link {
+  @extend %section-link;
   margin-bottom: 213px;
+}
 }
 
 .development-list {
   display: flex;
   gap: 100px;
-}
 
-.development-list__title {
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
   font-weight: 400;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
   color: $description-color;
   margin-bottom: 17px;
 }
 
-.development-list__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  color: $main-text-color;
+&__text {
+  @extend %section-text;
+}
+
+&__icon {
+    fill: $accent;
+    margin-right: 20px;
+}
 }

@@ -32,3 +32,19 @@ font-size: 14px;
 line-height: 1.57;
 color: $main-text-color;
 }
+
+%section-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-decoration-line: underline;
+  color: $accent;
+}
+
+%section-info {
+  font-weight: 400;
+font-size: 13px;
+line-height: 1.62;
+text-align: center;
+color: $main-text-color;
+}

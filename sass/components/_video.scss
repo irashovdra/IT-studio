@@ -3,9 +3,17 @@
   padding-bottom: 85px;
   background-color: black;
   margin-bottom: 165px;
+  background-image: url(../../images/desktop/video-bg-people@1x.png);
+
+  &__content {
+  background-image: url(../../images/desktop/video-bg-buildings@1x.png);
+  width: 970px;
+height: 430px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 }
 
-.video__title {
+&__title {
   @include section-title(
     $title-position: center,
     $section-title-color: $secondary-color
@@ -13,12 +21,12 @@
   margin-bottom: 30px;
 }
 
-.video__text {
-@extend %section-text;
+&__text {
+  @extend %section-text;
   margin-bottom: 235px;
 }
 
-.video__btn {
+&__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
@@ -26,4 +34,5 @@
   border: 1px solid #ffffff;
   border-radius: 200px;
   padding: 40px 30px 40px 30px;
+}
 }
