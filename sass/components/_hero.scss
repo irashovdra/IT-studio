@@ -3,8 +3,38 @@
     padding-top: 319px;
     padding-bottom: 335px;
     background-repeat: no-repeat;
-    background-image: url(../../images/desktop/hero-bg@1x.jpg);
     background-size: cover;
+    background-image: 
+    url(../../images/desktop/hero-bg@1x.jpg);
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: 
+      url(../../images/desktop/hero-bg@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px 118px 204px;
+    background-image: 
+      url(../../images/desktop/hero-bg@1x.jpg);
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: 
+        url(../../images/desktop/hero-bg@2x.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      background-image: 
+        url(../../images/desktop/hero-bg@1x.jpg);
+
+      @media screen and (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (min-device-pixel-ratio: 2) {
+        background-image: 
+          url(../../images/desktop/hero-bg@2x.jpg);
+      }
+    }
+  }
 
     &__text {
 font-weight: 500;

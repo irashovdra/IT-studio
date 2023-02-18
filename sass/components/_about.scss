@@ -11,53 +11,80 @@
     margin-right: auto;
   }
 
-    &__text {
-      @extend %section-text;
-      text-align: center;
-      max-width: 730px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 70px;
-    }
+  &__text {
+    @extend %section-text;
+    text-align: center;
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
 
-    &__btn {
-  @extend %btn;
-  margin-left: auto;
-  margin-right: auto;
-}
+  &__btn {
+    @extend %btn;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .about-list {
   display: flex;
+  flex-direction: column;
   gap: 27px;
   margin-bottom: 55px;
   justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 780px) {
+    flex-direction: row;
+  }
 
   &__item {
-  width: 350px;
-}
+    width: 500px;
+    display: flex;
 
-&__item::before {
-  content: "";
-  background-image: url(../../images/desktop/about-photo@1x.png);
-  width: 100%;
-    height: 120px;
-    display: block;
-    background: $background-color;
-border-radius: 4px;
-display: flex;
-@include center();
-background-size: 70px;
-background-repeat: no-repeat;
-background-position: center;
-}
+    @media screen and (min-width: 780px) {
+      width: 350px;
+    }
+  }
 
-&__title {
-  @extend %list-title;
-  margin-bottom: 12px;
-}
+  &__info {
+    padding-top: 50px;
+  }
 
-&__text {
-  @extend %list-text;
-}
+  &__title {
+    @extend %list-title;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  &__icon {
+    fill: $accent;
+  }
+
+  &__circle-out {
+    width: 110px;
+    height: 110px;
+    border: 1px solid $main-text-color;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 17px;
+  }
+
+  &__circle-in {
+    width: 90px;
+    height: 90px;
+    border: 1px solid $accent;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    @extend %list-text;
+  }
 }

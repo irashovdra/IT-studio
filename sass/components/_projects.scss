@@ -2,7 +2,6 @@
 background: #F6F6F8;
 padding-top: 100px;
 padding-bottom: 145px;
-margin-bottom: 67px;
 
 &__title {
     @include section-title($title-position: center);
@@ -28,9 +27,16 @@ text-align: center;
 
 .projects-list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-bottom: 50px;
     justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 780px) {
+     flex-direction: row;
+     flex-wrap: wrap;
+     }  
 
     &__photo {
     border-radius: 10px;

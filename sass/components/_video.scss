@@ -1,38 +1,55 @@
 .video {
   padding-top: 70px;
   padding-bottom: 85px;
-  background-color: black;
-  margin-bottom: 165px;
   background-image: url(../../images/desktop/video-bg-people@1x.png);
+  background-repeat: no-repeat;
 
   &__content {
-  background-image: url(../../images/desktop/video-bg-buildings@1x.png);
-  width: 970px;
-height: 430px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-}
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../images/desktop/video-bg-buildings@1x.png);
+    background-size: cover;
+    max-width: 970px;
+    height: 430px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-&__title {
-  @include section-title(
-    $title-position: center,
-    $section-title-color: $secondary-color
-  );
-  margin-bottom: 30px;
-}
+  &__title {
+    @include section-title(
+      $title-position: center,
+      $section-title-color: $secondary-color
+    );
+    margin-bottom: 30px;
+  }
 
-&__text {
-  @extend %section-text;
-  margin-bottom: 235px;
-}
+  &__text {
+    @extend %section-text;
+    margin-bottom: 70px;
+    text-align: center;
+  }
 
-&__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 25px;
-  color: $secondary-color;
-  border: 1px solid #ffffff;
-  border-radius: 200px;
-  padding: 40px 30px 40px 30px;
-}
+  &__btn {
+    width: 300px;
+    height: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: $secondary-color;
+    border: 1px solid #ffffff;
+    border-radius: 200px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    fill: $secondary-color;
+    background-color: $accent;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
 }
