@@ -17,31 +17,49 @@
 
   &__link {
     @extend %section-link;
-    margin-bottom: 213px;
+    display: block;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    }
+  }
+
+  &__photo {
+    width: 500px;
   }
 
   &__content {
     margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 1200px) {
-      display: flex;
+      justify-content: space-between;
     }
   }
 
   &__info {
-    margin-right: 120px;
+    width: 300px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+    min-width: 489px;
+    }
   }
 }
 
 .development-list {
-  gap: 30px;
-  display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   border-top: 1px solid #e0e0e0;
   padding-top: 70px;
+  align-items: center;
+  display: none;
 
   @media screen and (min-width: 780px) {
-    gap: 100px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }

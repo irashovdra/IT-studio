@@ -1,7 +1,11 @@
 @mixin section-title($title-position: left, $section-title-color: $title-color) {
     font-weight: 700;
-font-size: 36px;
+    font-size: 30px;
 line-height: 1.47;
 text-align: $title-position;
 color: $section-title-color;
+
+@media screen and (min-width: 768px) {
+    font-size: 36px;
+    }
 }

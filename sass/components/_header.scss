@@ -1,19 +1,47 @@
-// header {
-//   width: 100%;
-//   padding-top: 40px;
-//   padding-bottom: 40px;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   background-image: linear-gradient(
-//     to bottom,
-//     rgba(0, 0, 0, 0.8),
-//     rgba(0, 0, 0, 0.4),
-//     rgba(0, 0, 0, 0.1)
-//   );
-//   backdrop-filter: blur(3px);
-//   z-index: 100;
-// }
+.header {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1)
+  );
+  backdrop-filter: blur(3px);
+  z-index: 100;
+
+  .header__btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+
+    @media screen and (min-width: 530px) {
+    display: none;
+  }
+  }
+
+  &__icon {
+fill: $secondary-color;
+  }
+}
+
+.header__container {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    min-width: 480px;
+    width: 100%;
+  }
+}
+
+.header-nav {
+  @media screen and (max-width: 530px) {
+    display: none;
+  }
+}
 
 .active-page::after {
   position: absolute;
@@ -29,17 +57,21 @@
 
 .pages {
   display: flex;
-  margin-left: 500px;
+  justify-content: flex-end;
 
   &__link {
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     color: $secondary-color;
     transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__link:hover {

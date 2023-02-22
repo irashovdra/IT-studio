@@ -16,12 +16,20 @@
 
 &__form {
   position: relative;
-  width: 490px;
+  width: 100%;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+    width: 490px;
+    }
 }
 
 &__filling {
@@ -33,6 +41,13 @@
   padding: 15px 33px 15px 33px;
   margin-left: auto;
   margin-right: auto;
+}
+
+&__filling::placeholder {
+  font-weight: 400;
+font-size: 13px;
+line-height: 1.62;
+color: $main-text-color;
 }
 
 &__btn {
