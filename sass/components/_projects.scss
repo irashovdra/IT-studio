@@ -1,45 +1,38 @@
 .projects-section {
-background: #F6F6F8;
-padding-top: 100px;
-padding-bottom: 145px;
+  background: #f6f6f8;
+  padding-top: 100px;
+  padding-bottom: 145px;
 
-&__title {
+  &__title {
     @include section-title($title-position: center);
     margin-bottom: 30px;
-}
+  }
 
-&__text {
-@extend %section-text;
-margin-bottom: 90px;
-max-width: 680px;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-}
+  &__text {
+    @extend %section-text;
+    margin-bottom: 90px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 
-&__btn {
+  &__btn {
     @extend %btn;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 }
 
 .projects-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 50px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  margin-bottom: 50px;
+  @include grid($grid-gap: 30px);
 
-    @media screen and (min-width: 780px) {
-     flex-direction: row;
-     flex-wrap: wrap;
-     }  
-
-    &__photo {
+  &__photo {
     border-radius: 10px;
-}
+  }
+   &__item {
+      @include grid-card($grid-number: 4, $grid-gap: 30px);
+    }
 }

@@ -6,18 +6,7 @@
   &__list {
   // row-gap: 30px;
   // column-gap: 100px;
-  gap: 50px;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 780px) {
-     flex-direction: row;
-     align-items: flex-start;
-     flex-wrap: wrap;
-     gap: 30px;
-     }  
+  @include grid(50px);
 }
 
 &__title {
@@ -26,11 +15,11 @@
 }
 
 &__item {
-  width: 245px;
-  
-  &:first-child {
-    width: 255px;
-  }
+  @include grid-card($grid-number: 2, $grid-gap: 50px);
+
+   @media screen and (min-width: 1200px) {
+    @include grid-card($grid-number: 4, $grid-gap: 30px);
+    }
 }
 
 &__contact:not(:last-child) {

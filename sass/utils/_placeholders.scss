@@ -1,7 +1,7 @@
 %btn {
   width: 200px;
   height: 45px;
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -11,6 +11,8 @@
   background: $accent;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 %section-text {

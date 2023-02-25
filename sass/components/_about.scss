@@ -28,25 +28,17 @@
 }
 
 .about-list {
-  display: flex;
   flex-direction: column;
-  gap: 27px;
   margin-bottom: 55px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  @include grid(27px);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 
   &__item {
-    width: 300px;
+    @include grid-card($grid-gap: 27px);
     display: flex;
-
-    @media screen and (min-width: 768px) {
-      width: 350px;
-    }
   }
 
   &__info {
