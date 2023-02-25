@@ -4,49 +4,55 @@
   background: #f6f6f8;
 
   &__list {
-  // row-gap: 30px;
-  // column-gap: 100px;
-  @include grid(50px);
-}
+    // row-gap: 30px;
+    // column-gap: 100px;
+    @include grid(50px);
+  }
 
-&__title {
-  @extend %list-title;
-  margin-bottom: 35px;
-}
+  &__title {
+    @extend %list-title;
+    margin-bottom: 35px;
+  }
 
-&__item {
-  @include grid-card($grid-number: 2, $grid-gap: 50px);
+  &__item {
+    @include grid-card($grid-number: 2, $grid-gap: 50px);
 
-   @media screen and (min-width: 1200px) {
-    @include grid-card($grid-number: 4, $grid-gap: 30px);
+    @media screen and (min-width: 1200px) {
+      @include grid-card($grid-number: 4, $grid-gap: 30px);
     }
-}
+  }
 
-&__contact:not(:last-child) {
-  margin-bottom: 30px;
-}
+  &__contact:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
-&__icon {
-  fill: currentColor;
-  margin-right: 15px
-}
+  &__icon {
+    fill: currentColor;
+    margin-right: 15px;
+  }
 
-&__link {
-  @extend %list-text;
-  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
-  display: flex;
-  align-items: center;
-}
+  &__link {
+    @extend %list-text;
+    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+    display: flex;
+    align-items: center;
 
-&__link:hover {
-  color: $accent;
-  fill: $accent;
-}
+    transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
 
-&__info {
-  @extend %section-info;
-  border-top: 1px solid #E0E0E0;
-  padding-top: 30px;
-  margin-top: 70px;
-}
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__link:hover {
+    color: $accent;
+    fill: $accent;
+  }
+
+  &__info {
+    @extend %section-info;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+    margin-top: 70px;
+  }
 }

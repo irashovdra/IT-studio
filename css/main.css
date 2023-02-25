@@ -43,6 +43,12 @@ address {
   border-radius: 30px;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+.projects-section__btn:hover, .work-section__btn:hover, .about-section__btn:hover, .hero-section__btn:hover {
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 4px #4985FF;
+  color: #4985FF;
 }
 
 .subscribing__description, .video__text, .projects-section__text, .work-list__text, .development-list__text, .development-section__text, .about-section__text {
@@ -89,7 +95,6 @@ address {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  outline: 3px green solid;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -175,6 +180,11 @@ body {
   background-color: #FFFFFF;
   width: 100%;
   border-radius: 3px;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.active-page:hover::after {
+  background-color: #4985FF;
 }
 
 .pages {
@@ -324,6 +334,16 @@ body {
   flex-basis: calc(33.3333333333% - 54px);
   display: flex;
 }
+.about-list__item:hover .about-list__icon {
+  fill: #999999;
+}
+.about-list__item:hover .about-list__circle-in {
+  background-color: rgba(73, 133, 255, 0.2);
+  border-color: #999999;
+}
+.about-list__item:hover .about-list__circle-out {
+  border-color: #4985FF;
+}
 .about-list__info {
   padding-top: 50px;
 }
@@ -388,6 +408,12 @@ body {
 }
 .development-section__photo {
   width: 500px;
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+.development-section__photo:hover {
+  box-shadow: 0px 0px 10px 4px #4985FF;
+  transform: scale(1.05);
+  border-radius: 40px;
 }
 .development-section__content {
   margin-bottom: 90px;
@@ -493,6 +519,11 @@ body {
 }
 .work-list__item {
   flex-basis: calc(33.3333333333% - 60px);
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+.work-list__item:hover {
+  box-shadow: 0px 0px 10px 4px #4985FF;
+  transform: scale(1.05);
 }
 .work-list__photo {
   margin-bottom: 30px;
@@ -562,6 +593,13 @@ body {
 }
 .projects-list__item {
   flex-basis: calc(25% - 90px);
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms, overflow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+.projects-list__item:hover {
+  box-shadow: 0px 0px 10px 4px #4985FF;
+  transform: scale(1.05);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .video {
@@ -584,6 +622,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+.video__content:hover {
+  box-shadow: 0px 0px 10px 4px #4985FF;
+  transform: scale(1.05);
+  border-radius: 10px;
 }
 .video__title {
   font-weight: 700;
@@ -643,6 +687,12 @@ body {
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, box-shadow 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms, border-radius 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+}
+.subscribing__form:hover {
+  box-shadow: 0px 0px 10px 4px #4985FF;
+  transform: scale(1.05);
+  border-radius: 30px;
 }
 @media screen and (min-width: 480px) {
   .subscribing__form {
@@ -724,13 +774,17 @@ body {
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
   display: flex;
   align-items: center;
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+.footer__link:hover {
+  transform: scale(1.05);
 }
 .footer__link:hover {
   color: #4985FF;
   fill: #4985FF;
 }
 .footer__info {
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
   padding-top: 30px;
   margin-top: 70px;
 }/*# sourceMappingURL=main.css.map */

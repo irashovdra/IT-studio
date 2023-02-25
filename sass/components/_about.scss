@@ -39,6 +39,19 @@
   &__item {
     @include grid-card($grid-gap: 27px);
     display: flex;
+
+    &:hover .about-list__icon {
+      fill: $main-text-color;
+    }
+
+    &:hover .about-list__circle-in {
+      background-color: rgba(73, 133, 255, 0.2);
+      border-color: $main-text-color;
+    }
+
+    &:hover .about-list__circle-out {
+      border-color: $accent;
+    }
   }
 
   &__info {
