@@ -24,6 +24,15 @@
       href="https://fonts.googleapis.com/css2?family=Headland+One&family=Inter&family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -33,19 +42,19 @@
       <div class="container header__container">
         <nav class="header-nav">
           <ul class="pages">
-            <li class="pages__item">
+            <li class="pages__item animate__heartBeat">
               <a href="/" class="pages__link active-page">Головна</a>
             </li>
-            <li class="pages__item">
+            <li class="pages__item animate__heartBeat">
               <a href="#projects" class="pages__link">Наші проекти</a>
             </li>
-            <li class="pages__item">
+            <li class="pages__item animate__heartBeat">
               <a href="#services" class="pages__link">Послуги</a>
             </li>
-            <li class="pages__item">
+            <li class="pages__item animate__heartBeat">
               <a href="#news" class="pages__link">Новини</a>
             </li>
-            <li class="pages__item">
+            <li class="pages__item animate__heartBeat">
               <a href="#contacts" class="pages__link">Контакти</a>
             </li>
           </ul>
@@ -71,18 +80,18 @@
       <!-- Секція герой -->
 
       <section class="hero-section" id="top">
-        <p class="hero-section__text">Передова IT студія</p>
-        <h1 class="hero-section__title">
+        <p class="hero-section__text hero__text-animation">Передова IT студія</p>
+        <h1 class="hero-section__title hero__title-animation">
           Ми створюємо легкі рішення важких задач і проблем
         </h1>
-        <button type="button" class="hero-section__btn">Наші проекти</button>
+        <button type="button" class="hero-section__btn hero__btn-animation">Наші проекти</button>
       </section>
 
       <!-- Секція about -->
 
       <section class="about-section" id="services">
         <div class="container">
-          <h2 class="about-section__title">
+          <h2 class="about-section__title" data-aos="fade-up-right" data-aos-duration="2000">
             Ми створюємо мобільні додатки для великих корпорацій
           </h2>
           <p class="about-section__text">
@@ -90,7 +99,9 @@
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
             латиниці з початку XVI ст.
           </p>
-          <ul class="about-list">
+          <ul class="about-list" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
             <li class="about-list__item">
               <div class="about-list__circle-out">
                 <div class="about-list__circle-in">
@@ -150,7 +161,7 @@
         <div class="container">
           <div class="development-section__content">
             <div class="development-section__info">
-              <h2 class="development-section__title">
+              <h2 class="development-section__title" data-aos="fade-right" data-aos-duration="2000">
                 Високі стандарти розробки
               </h2>
               <p class="development-section__text">
@@ -162,7 +173,7 @@
                 >Детальніше про компанію</a
               >
             </div>
-            <img
+            <img data-aos="flip-right" data-aos-duration="2000"
               src="./images/desktop/development-photo@1x.png"
               srcset="
                 images/desktop/development-photo@1x.png 1x,
@@ -308,7 +319,7 @@
             латиниці з початку XVI ст.
           </p>
           <ul class="projects-list">
-            <li class="projects-list__item">
+            <li class="projects-list__item" data-aos="zoom-in-right">
               <img
                 src="images/desktop/projects-photo@1x.png"
                 srcset="
@@ -319,7 +330,7 @@
                 class="projects-list__photo"
               />
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item" data-aos="zoom-in-up">
               <img
                 src="images/desktop/projects-photo@1x.png"
                 srcset="
@@ -330,7 +341,7 @@
                 class="projects-list__photo"
               />
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item" data-aos="zoom-in-up">
               <img
                 src="images/desktop/projects-photo@1x.png"
                 srcset="
@@ -341,7 +352,7 @@
                 class="projects-list__photo"
               />
             </li>
-            <li class="projects-list__item">
+            <li class="projects-list__item" data-aos="zoom-in-left">
               <img
                 src="images/desktop/projects-photo@1x.png"
                 srcset="
@@ -384,7 +395,7 @@
           <p class="subscribing__description">
             Корисні статті, акції, новини - отримайте все це зараз!
           </p>
-          <form class="subscribing__form">
+          <form class="subscribing__form" data-aos="flip-left" data-aos-duration="2000">
             <input
               type="text"
               class="subscribing__filling"
@@ -604,5 +615,9 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
